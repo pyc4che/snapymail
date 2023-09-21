@@ -39,7 +39,7 @@ class MailManager:
         ).json()
 
         return {
-            'sender': response.get('from'),
+            'from': response.get('from'),
             'subject': response.get('subject'),
             'date': response.get('date'),
             'content': response.get('content'),
